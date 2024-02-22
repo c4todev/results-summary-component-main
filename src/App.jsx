@@ -32,7 +32,11 @@ export default function App() {
               className="flex flex-row sm:flex-col lg:flex-row sm:items-center sm:flex-1 lg:flex-0 sm:gap-2 justify-between mt-4 p-3 rounded-md"
             >
               <div className="flex flex-row gap-3 sm:gap-1">
-                <img className="w-5" src={item.icon} />
+                <img
+                  className="w-5"
+                  src={item.icon}
+                  alt={`${item.category} icon`}
+                />
                 <p style={{ color: `${item.color}` }}>{item.category}</p>
               </div>
               <div className="flex flex-row gap-2 font-semibold">
